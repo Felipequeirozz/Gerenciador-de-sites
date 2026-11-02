@@ -1,0 +1,161 @@
+
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f0f1a;
+    color: #ffffff;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #181827;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #7c3aed;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Menu */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    background-color: #292940;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #7c3aed;
+}
+
+nav a.ativo {
+    background-color: #7c3aed;
+}
+
+/* Conteúdo */
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    color: #a5a5c5;
+    margin-bottom: 35px;
+}
+
+/* Cartões */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background-color: #1c1c2e;
+    width: 200px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #33334d;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #7c3aed;
+    box-shadow: 0 8px 25px #7c3aed33;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Imagens */
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+/* Botões */
+
+.botao {
+    display: block;
+    background-color: #7c3aed;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #9333ea;
+}
+
+/* Rodapé */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #77778f;
+    margin-top: 30px;
+}
+
+/* Adaptação para celular */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        width: 150px;
+        padding: 20px;
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+    }
+
+}
